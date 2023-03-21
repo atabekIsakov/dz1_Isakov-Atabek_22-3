@@ -1,8 +1,8 @@
 import './App.css';
-import { Component } from './components/Component';
-import { Component2 } from './components/Component';
-import Button from './components/Button';
-import Header from './components/Header';
+import Content from './components/content/Content';
+import Footer from './components/footer/Footer';
+import Header from './components/header/Header';
+
 function App() {
   const menuList = [
     'Main',
@@ -11,14 +11,9 @@ function App() {
   ]
   return (
     <div className="App">
-     <Header menuList={menuList} />
-     <Component 
-     text={'Component1 fdsafdsa'} 
-     description={'text for our  12321 212 component'} />
-     <Component2 />
-     <Button 
-     clickText={'Click me propsd dsdscds'}
-     />
+      <Header menuList={menuList} />
+      <Content content={'lorem lorem lorem lorem'} />
+      <Footer />
     </div>
   );
 }
